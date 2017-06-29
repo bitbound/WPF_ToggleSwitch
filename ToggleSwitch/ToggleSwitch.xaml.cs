@@ -18,16 +18,21 @@ namespace ToggleSwitch
 {
     public partial class ToggleSwitch : UserControl
     {
-        private bool isOn = false;
         public bool IsOn
         {
             get
             {
-                return isOn;
+                if (buttonToggle.Tag.ToString() == "On")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             set
             {
-                isOn = value;
                 if (value)
                 {
                     buttonToggle.Tag = "On";
