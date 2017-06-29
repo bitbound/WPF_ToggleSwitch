@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WPF_ToggleSwitch</id>
+    <version>$version$</version>
+    <title>WPF_ToggleSwitch</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Jay-Rad/WPF_ToggleSwitch/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/Jay-Rad/WPF_ToggleSwitch</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial.</releaseNotes>
+    <copyright>Copyright 2017 Translucency</copyright>
+    <tags>WPF ToggleSwitch Toggle Switch</tags>
+  </metadata>
+</package>

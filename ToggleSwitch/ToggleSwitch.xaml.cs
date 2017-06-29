@@ -37,18 +37,18 @@ namespace ToggleSwitch
                 {
                     buttonToggle.Tag = "On";
                     borderToggle.Background = new SolidColorBrush(Colors.Gray);
-                    var ca = new ColorAnimation(Colors.SkyBlue, TimeSpan.FromSeconds(.5));
+                    var ca = new ColorAnimation(Colors.SkyBlue, TimeSpan.FromSeconds(.25));
                     borderToggle.Background.BeginAnimation(SolidColorBrush.ColorProperty, ca);
-                    var da = new DoubleAnimation(10, TimeSpan.FromSeconds(.5));
+                    var da = new DoubleAnimation(10, TimeSpan.FromSeconds(.25));
                     translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
                 }
                 else
                 {
                     buttonToggle.Tag = "Off";
                     borderToggle.Background = new SolidColorBrush(Colors.SkyBlue);
-                    var ca = new ColorAnimation(Colors.Gray, TimeSpan.FromSeconds(.5));
+                    var ca = new ColorAnimation(Colors.Gray, TimeSpan.FromSeconds(.25));
                     borderToggle.Background.BeginAnimation(SolidColorBrush.ColorProperty, ca);
-                    var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.5));
+                    var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.25));
                     translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
                 }
             }
@@ -64,18 +64,18 @@ namespace ToggleSwitch
             {
                 buttonToggle.Tag = "On";
                 borderToggle.Background = new SolidColorBrush(Colors.Gray);
-                var ca = new ColorAnimation(Colors.SkyBlue, TimeSpan.FromSeconds(.5));
+                var ca = new ColorAnimation(Colors.SkyBlue, TimeSpan.FromSeconds(.25));
                 borderToggle.Background.BeginAnimation(SolidColorBrush.ColorProperty, ca);
-                var da = new DoubleAnimation(10, TimeSpan.FromSeconds(.5));
+                var da = new DoubleAnimation(10, TimeSpan.FromSeconds(.25));
                 translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
             }
             else
             {
                 buttonToggle.Tag = "Off";
                 borderToggle.Background = new SolidColorBrush(Colors.SkyBlue);
-                var ca = new ColorAnimation(Colors.Gray, TimeSpan.FromSeconds(.5));
+                var ca = new ColorAnimation(Colors.Gray, TimeSpan.FromSeconds(.25));
                 borderToggle.Background.BeginAnimation(SolidColorBrush.ColorProperty, ca);
-                var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.5));
+                var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.25));
                 translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
             }
         }
