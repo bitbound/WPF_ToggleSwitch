@@ -18,6 +18,13 @@ namespace ToggleSwitch
 {
     public partial class ToggleSwitch : UserControl
     {
+        public ToggleSwitch()
+        {
+            InitializeComponent();
+            Switched = new EventHandler((send, arg) => { });
+        }
+        public EventHandler Switched;
+        
         public bool IsOn
         {
             get
@@ -51,13 +58,9 @@ namespace ToggleSwitch
                     var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.25));
                     translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
                 }
+                Switched(this, EventArgs.Empty);
             }
         }
-        public ToggleSwitch()
-        {
-            InitializeComponent();
-        }
-        
         private void buttonToggle_Click(object sender, RoutedEventArgs e)
         {
             if (buttonToggle.Tag.ToString() == "Off")
@@ -78,6 +81,7 @@ namespace ToggleSwitch
                 var da = new DoubleAnimation(-10, TimeSpan.FromSeconds(.25));
                 translateTransform.BeginAnimation(TranslateTransform.XProperty, da);
             }
+            Switched(this, EventArgs.Empty);
         }
     }
 }
