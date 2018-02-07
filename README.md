@@ -1,7 +1,7 @@
 # WPF_ToggleSwitch
 A WPF toggle switch control.
 
-![Toggle Switch](https://invis.me/Images/ExternallyReferenced/ToggleSwitch.gif)
+![Toggle Switch](http://invis.me/Images/ExternallyReferenced/ToggleSwitch.gif)
 
 ### Installation: 
 ` Install-Package WPF_ToggleSwitch `
