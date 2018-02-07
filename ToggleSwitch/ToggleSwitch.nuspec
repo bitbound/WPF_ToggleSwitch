@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/Jay-Rad/WPF_ToggleSwitch</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial.</releaseNotes>
-    <copyright>Copyright 2017 Translucency</copyright>
+    <releaseNotes>Added public properties for changing the colors.</releaseNotes>
+    <copyright>Copyright 2018 Translucency</copyright>
     <tags>WPF ToggleSwitch Toggle Switch</tags>
   </metadata>
 </package>
